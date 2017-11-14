@@ -1,0 +1,1 @@
+{"version":3,"sources":["lsx-galleries.scss"],"names":[],"mappings":"AAAA,mDAIG","file":"../lsx-galleries.css","sourcesContent":["/**\n * LSX Galleries styles.\n *\n * @package lsx-galleries\n */\n\n@import 'include-media';"]}
