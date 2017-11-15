@@ -101,4 +101,8 @@ add_action( 'admin_init', 'lsx_galleries_api_admin_init' );
 require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries.php' );
 require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries-admin.php' );
 require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries-frontend.php' );
+require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries-widget-most-recent.php' );
+require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries-widget-list.php' );
+require_once( LSX_GALLERIES_PATH . '/classes/class-lsx-galleries-widget-categories.php' );
 require_once( LSX_GALLERIES_PATH . '/includes/functions.php' );
+require_once( LSX_GALLERIES_PATH . '/includes/post-order.php' );
