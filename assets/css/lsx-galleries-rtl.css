@@ -1,5 +1,4 @@
 /** LSX Galleries styles. @package lsx-galleries */
-/* @import 'customizer-galleries-body-colours'; */
 @media (min-width: 768px) { #lsx-galleries-modal .modal-dialog { max-width: 992px; width: 100%; } }
 
 #lsx-galleries-modal .modal-dialog .modal-title { text-align: center; }
@@ -106,12 +105,10 @@
 
 @media (min-width: 768px) { .archive.post-type-archive-gallery .nav-tabs > li > a, .archive.tax-gallery-category .nav-tabs > li > a { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 
-@media (min-width: 992px) { .archive.post-type-archive-gallery .nav-tabs > li > a, .archive.tax-gallery-category .nav-tabs > li > a { font-size: 22px; } }
+@media (min-width: 992px) { .archive.post-type-archive-gallery .nav-tabs > li > a, .archive.tax-gallery-category .nav-tabs > li > a { font-size: 22px; background-color: #fff; } }
 
-.archive.post-type-archive-gallery .nav-tabs > li.active > a, .archive.tax-gallery-category .nav-tabs > li.active > a { border: 0 none; position: relative; }
+.archive.post-type-archive-gallery .nav-tabs > li.active > a, .archive.tax-gallery-category .nav-tabs > li.active > a { border: 0 none; position: relative; background-color: #418AD0; color: #fff; }
 
 @media (min-width: 768px) { .archive.post-type-archive-gallery .nav-tabs > li.active > a:after, .archive.tax-gallery-category .nav-tabs > li.active > a:after { content: ''; border-style: solid; border-width: 0 6px 6px 6px; bottom: 0; height: 0; right: 50%; position: absolute; -webkit-transform: translateX(50%); transform: translateX(50%); width: 0; } }
 
-@media (min-width: 768px) and (min-width: 992px) { .archive.post-type-archive-gallery .nav-tabs > li.active > a:after, .archive.tax-gallery-category .nav-tabs > li.active > a:after { border-width: 0 9px 9px 9px; } }
-
-/* @include customizer-galleries-body-colours(#F6F6F6, #DADDDF, #4A4A4A, #418AD0, #F7AE00, #919191); */
+@media (min-width: 768px) and (min-width: 992px) { .archive.post-type-archive-gallery .nav-tabs > li.active > a:after, .archive.tax-gallery-category .nav-tabs > li.active > a:after { border-width: 0 9px 9px 9px; border-color: transparent transparent #f6f6f6 transparent; } }

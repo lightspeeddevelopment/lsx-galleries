@@ -49,45 +49,8 @@
 		}
 	}
 
-	// .lsx-services-section {
-	// 	.lsx-projects-slot {
-	// 		.lsx-projects-content {
-	// 			a.moretag {
-	// 				color: #FFF !important;
-
-	// 				&:hover { color: #FFF !important; }
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	.lsx-galleries-slider {
-		.slick-dots {
-			& > li {
-				& > button { border-color: $color; }
-
-				&.slick-active > button { background-color: $color; }
-			}
-		}
-
-		.slick-arrow {
-			border-color: $color;
-			color: $color;
-
-			&:hover {
-				border-color: $hover;
-				color: $hover;
-			}
-
-			&.slick-disabled {
-				border-color: $breaker;
-				color: $breaker;
-			}
-		}
-	}
-
-	.archive.post-type-archive-video,
-	.archive.tax-video-category {
+	.archive.post-type-archive-gallery,
+	.archive.tax-gallery-category {
 		.nav-tabs {
 			& > li {
 				& > a {
@@ -105,4 +68,4 @@
 			}
 		}
 	}
-} 
+}

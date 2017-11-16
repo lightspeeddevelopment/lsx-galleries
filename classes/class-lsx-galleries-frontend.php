@@ -29,6 +29,7 @@ class LSX_Galleries_Frontend {
 		add_action( 'wp_ajax_nopriv_get_gallery_embed', array( $this, 'get_gallery_embed' ) );
 
 		add_filter( 'wp_kses_allowed_html', array( $this, 'wp_kses_allowed_html' ), 10, 2 );
+		add_filter( 'template_include', array( $this, 'single_template_include' ), 99 );
 		add_filter( 'template_include', array( $this, 'archive_template_include' ), 99 );
 
 		add_filter( 'lsx_banner_title', array( $this, 'lsx_banner_archive_title' ), 15 );
@@ -86,29 +87,50 @@ class LSX_Galleries_Frontend {
 	 * Get gallery embed (ajax).
 	 */
 	public function get_gallery_embed() {
-		if ( ! empty( $_GET['gallery'] ) && ! empty( $_GET['post_id'] ) ) {
-			$gallery = sanitize_text_field( wp_unslash( $_GET['gallery'] ) );
-			$post_id = sanitize_text_field( wp_unslash( $_GET['post_id'] ) );
+		echo do_shortcode( '[gallery width="992" height="558" src="' . $gallery . '"]' );
+		// if ( ! empty( $_GET['gallery'] ) && ! empty( $_GET['post_id'] ) ) {
+		// 	$gallery = sanitize_text_field( wp_unslash( $_GET['gallery'] ) );
+		// 	$post_id = sanitize_text_field( wp_unslash( $_GET['post_id'] ) );
 
-			if ( ! empty( $gallery ) && ! empty( $post_id ) ) {
-				$this->increase_views_counter( $post_id );
-				$gallery_parts = parse_url( $gallery );
+		// 	if ( ! empty( $gallery ) && ! empty( $post_id ) ) {
+		// 		$this->increase_views_counter( $post_id );
+		// 		$gallery_parts = parse_url( $gallery );
 
-				echo '<div class="embed-responsive embed-responsive-16by9">';
+		// 		echo '<div class="embed-responsive embed-responsive-16by9">';
 
-				if ( in_array( $gallery_parts['host'], array( 'www.youtube.com', 'youtube.com', 'youtu.be' ) ) ) {
-					// @codingStandardsIgnoreLine
-					echo wp_oembed_get( $gallery, array(
-						'height' => 558,
-						'width' => 992,
-					) );
-				} else {
-					echo do_shortcode( '[gallery width="992" height="558" src="' . $gallery . '"]' );
-				}
+		// 		// if ( in_array( $gallery_parts['host'], array( 'www.youtube.com', 'youtube.com', 'youtu.be' ) ) ) {
+		// 		// 	// @codingStandardsIgnoreLine
+		// 		// 	echo wp_oembed_get( $gallery, array(
+		// 		// 		'height' => 558,
+		// 		// 		'width' => 992,
+		// 		// 	) );
+		// 		// } else {
+		// 		// 	echo do_shortcode( '[gallery width="992" height="558" src="' . $gallery . '"]' );
+		// 		// }
 
-				echo '</div>';
-			}
-		}
+		// 		echo do_shortcode( '[gallery width="992" height="558" src="' . $gallery . '"]' );
+
+		// 		echo '</div>';
+		// 	}
+		// }
+
+		// echo '<div>';
+
+		// 	if ( ! empty( $_GET['gallery'] ) && ! empty( $_GET['post_id'] ) ) {
+		// 	$img_1_figure = get_post_meta( get_the_ID(), 'lsx_gallery_image_01_file', true );
+		// 		if ( ! empty( $img_1_figure ) ) {
+		// 			echo '<img src="' .wp_get_attachment_url( $img_1_figure ). '">';
+		// 		}
+		// 	$img_1_title = get_post_meta( get_the_ID(), 'lsx_gallery_image_01_title', true );
+		// 		if ( ! empty( $img_1_title ) ) {
+		// 			echo '<p>Image title: '.$img_1_title.'</p>';
+		// 		}
+		// 	$img_1_description = get_post_meta( get_the_ID(), 'lsx_gallery_image_01_description', true );
+		// 		if ( ! empty( $img_1_description ) ) {
+		// 			echo '<p>Image description: '.$img_1_description.'</p>';
+		// 		}
+		// 	}
+		// echo '</div>';
 
 		wp_die();
 	}
@@ -116,11 +138,11 @@ class LSX_Galleries_Frontend {
 	/**
 	 * Increase gallery views counter.
 	 */
-	public function increase_views_counter( $post_id ) {
-		$count = (int) get_post_meta( $post_id, '_views', true );
-		$count++;
-		update_post_meta( $post_id, '_views', $count );
-	}
+	// public function increase_views_counter( $post_id ) {
+	// 	$count = (int) get_post_meta( $post_id, '_views', true );
+	// 	$count++;
+	// 	update_post_meta( $post_id, '_views', $count );
+	// }
 
 	/**
 	 * Allow data params for Slick slider addon.
@@ -133,6 +155,19 @@ class LSX_Galleries_Frontend {
 		$allowedtags['a']['data-post-id'] = true;
 		$allowedtags['a']['data-title'] = true;
 		return $allowedtags;
+	}
+
+	/**
+	 * Single template.
+	 */
+	public function single_template_include( $template ) {
+		if ( is_main_query() && is_singular( 'gallery' ) ) {
+			if ( empty( locate_template( array( 'single-galleries.php' ) ) ) && file_exists( LSX_GALLERIES_PATH . 'templates/single-galleries.php' ) ) {
+				$template = LSX_GALLERIES_PATH . 'templates/single-galleries.php';
+			}
+		}
+
+		return $template;
 	}
 
 	/**

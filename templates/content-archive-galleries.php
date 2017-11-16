@@ -55,12 +55,12 @@
 
 <div class="<?php echo esc_attr( apply_filters( 'lsx_slot_class', 'col-xs-12 col-sm-4 col-md-3' ) ); ?> lsx-galleries-column <?php echo esc_attr( $categories_class ); ?>">
 	<article class="lsx-galleries-slot">
-		<a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="<?php the_ID(); ?>" data-gallery="<?php echo esc_url( $gallery_url ); ?>" data-title="<?php the_title(); ?>">
+		<a href="<?php echo get_page_link( $the_ID ); ?>" data-toggle="modal" data-post-id="<?php the_ID(); ?>" data-gallery="<?php echo esc_url( $gallery_url ); ?>" data-title="<?php the_title(); ?>">
 			<figure class="lsx-galleries-avatar"><?php lsx_thumbnail( 'lsx-galleries-cover' ); ?></figure>
 		</a>
 
 		<h5 class="lsx-galleries-title">
-			<a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="<?php the_ID(); ?>" data-gallery="<?php echo esc_url( $gallery_url ); ?>" data-title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			<a href="<?php echo get_page_link( $the_ID ); ?>" data-toggle="modal" data-post-id="<?php the_ID(); ?>" data-gallery="<?php echo esc_url( $gallery_url ); ?>" data-title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h5>
 
 		<?php if ( ! empty( $categories ) ) : ?>

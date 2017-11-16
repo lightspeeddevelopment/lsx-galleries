@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single galleries.
+ * The template for displaying a single galleries.
  *
  * @package lsx-galleries
  */
@@ -13,32 +13,17 @@ get_header(); ?>
 
 	<?php lsx_content_before(); ?>
 
-	<main id="main" class="site-main test">
+	<main id="main" class="site-main">
 
 		<?php lsx_content_top(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<div class="lsx-galleries-container">
-				<div class="row row-flex lsx-galleries-row">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php
-						$count = 0;
+				<?php include( LSX_GALLERIES_PATH . '/templates/content-single-galleries.php' ); ?>
 
-						while ( have_posts() ) {
-							the_post();
-							include( LSX_GALLERIES_PATH . '/templates/content-archive-galleries.php' );
-						}
-					?>
-
-				</div>
-			</div>
-
-			<?php lsx_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'partials/content', 'none' ); ?>
+			<?php endwhile; ?>
 
 		<?php endif; ?>
 

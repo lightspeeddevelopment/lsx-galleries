@@ -177,7 +177,7 @@ class LSX_Galleries {
 					$output .= '
 						<div class="lsx-galleries-slot">
 							' . ( ! empty( $image ) ? '<a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '"><figure class="lsx-galleries-avatar">' . $image . '</figure></a>' : '' ) . '
-							<h5 class="lsx-galleries-title"><a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
+							<h5 class="lsx-galleries-title"><a href="' . get_page_link( $the_ID ) . '" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
 							' . $gallery_categories . '
 
 							<div class="lsx-galleries-content">' . $content . '</div>
@@ -189,7 +189,7 @@ class LSX_Galleries {
 						<div class="col-xs-12 col-md-' . $md_col_width . '">
 							<div class="lsx-galleries-slot">
 								' . ( ! empty( $image ) ? '<a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '"><figure class="lsx-galleries-avatar">' . $image . '</figure></a>' : '' ) . '
-								<h5 class="lsx-galleries-title"><a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
+								<h5 class="lsx-galleries-title"><a href="' . get_page_link( $the_ID ) . '" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
 								' . $gallery_categories . '
 
 								<div class="lsx-galleries-content">' . $content . '</div>
@@ -331,7 +331,7 @@ class LSX_Galleries {
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="lsx-galleries-slot-single">
-							<h5 class="lsx-galleries-title"><a href="#lsx-galleries-modal" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
+							<h5 class="lsx-galleries-title"><a href="' . get_page_link( $the_ID ) . '" data-toggle="modal" data-post-id="' . esc_attr( $post->ID ) . '" data-gallery="' . esc_url( $gallery_url ) . '" data-title="' . apply_filters( 'the_title', $post->post_title ) . '">' . apply_filters( 'the_title', $post->post_title ) . '</a></h5>
 							' . $gallery_categories . '
 
 							<div class="lsx-galleries-content">' . $content . '</div>
