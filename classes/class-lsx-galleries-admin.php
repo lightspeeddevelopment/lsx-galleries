@@ -35,16 +35,13 @@ class LSX_Galleries_Admin {
 			add_filter( 'lsx_customizer_colour_selectors_body', array( $this, 'customizer_body_colours_handler' ), 15, 2 );
 		}
 
-		add_action( 'init', array( $this, 'create_settings_page' ), 100 );
-		add_filter( 'lsx_framework_settings_tabs', array( $this, 'register_tabs' ), 100, 1 );
+		// add_action( 'init', array( $this, 'create_settings_page' ), 100 );
+		// add_filter( 'lsx_framework_settings_tabs', array( $this, 'register_tabs' ), 100, 1 );
 
-		add_filter( 'type_url_form_media', array( $this, 'change_attachment_field_button' ), 20, 1 );
+		// add_filter( 'type_url_form_media', array( $this, 'change_attachment_field_button' ), 20, 1 );
 		add_filter( 'enter_title_here', array( $this, 'change_title_text' ) );
 
-		// add_filter( 'cf_custom_fields_pre_save_meta_key_to_post_type', array( $this, 'save_gallery_to_cmb' ), 10, 5 );
-
-		add_filter( 'manage_gallery_posts_columns', array( $this, 'columns_head' ), 10 );
-		add_action( 'manage_gallery_posts_custom_column', array( $this, 'columns_content' ), 10, 2 );
+		add_filter( 'cf_custom_fields_pre_save_meta_key_to_post_type', array( $this, 'save_image_gallery_to_cmb' ), 10, 5 );
 	}
 
 	/**
@@ -131,48 +128,14 @@ class LSX_Galleries_Admin {
 	public function field_setup( $meta_boxes ) {
 		$prefix = 'lsx_gallery_';
 
+		// Global
+
 		$fields = array(
 			array(
 				'name' => esc_html__( 'Featured:', 'lsx-galleries' ),
 				'id'   => $prefix . 'featured',
 				'type' => 'checkbox',
 			),
-			// * Using post title
-			// array(
-			// 	'name' => esc_html__( 'Gallery Title:', 'lsx-galleries' ),
-			// 	'id'   => $prefix . 'title',
-			// 	'type' => 'text',
-			// ),
-			// * Using post description
-			// array(
-			// 	'name' => esc_html__( 'Gallery Description', 'lsx-galleries' ),
-			// 	'id'   => $prefix . 'description',
-			// 	'type' => 'textarea',
-			// 	'rows' => 5,
-			// ),
-			array(
-				'name' => esc_html__( 'Gallery source:', 'lsx-galleries' ),
-				'id'   => $prefix . 'gallery',
-				'type' => 'file',
-				'desc' => esc_html__( 'Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)', 'lsx-galleries' ),
-			),
-			// * Will save those as hidden meta
-			// array(
-			// 	'name' => esc_html__( 'Gallery Time:', 'lsx-galleries' ),
-			// 	'id'   => $prefix . 'time',
-			// 	'type' => 'text',
-			// ),
-			// array(
-			// 	'name' => esc_html__( 'Gallery Total Views:', 'lsx-galleries' ),
-			// 	'id'   => $prefix . 'views',
-			// 	'type' => 'text',
-			// ),
-			// array(
-			// 	'name' => esc_html__( 'Youtube source:', 'lsx-galleries' ),
-			//	'id'   => $prefix . 'youtube',
-			//	'type' => 'text_url',
-			//	'desc' => esc_html__( 'It will replace the original gallery source on front-end.', 'lsx-galleries' ),
-			// ),
 		);
 
 		$meta_boxes[] = array(
@@ -180,6 +143,8 @@ class LSX_Galleries_Admin {
 			'pages'  => 'gallery',
 			'fields' => $fields,
 		);
+
+		// Uploader / User
 
 		$fields = array(
 			array(
@@ -211,6 +176,87 @@ class LSX_Galleries_Admin {
 
 		$meta_boxes[] = array(
 			'title'  => esc_html__( 'Gallery Uploader Details', 'lsx-galleries' ),
+			'pages'  => 'gallery',
+			'fields' => $fields,
+		);
+
+		// Image 01
+
+		$fields = array(
+			array(
+				'name' => esc_html__( 'Gallery image:', 'lsx-galleries' ),
+				'id'   => $prefix . 'image_01_file',
+				'type' => 'image',
+				'desc' => esc_html__( 'Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)', 'lsx-galleries' ),
+			),
+			array(
+				'id'   => $prefix . 'image_01_title',
+				'name' => esc_html__( 'Gallery title', 'lsx-galleries' ),
+				'type' => 'text',
+			),
+			array(
+				'id'   => $prefix . 'image_01_description',
+				'name' => esc_html__( 'Gallery description', 'lsx-galleries' ),
+				'type' => 'textarea',
+			),
+		);
+
+		$meta_boxes[] = array(
+			'title'  => esc_html__( 'Gallery Image 01', 'lsx-galleries' ),
+			'pages'  => 'gallery',
+			'fields' => $fields,
+		);
+
+		// Image 02
+
+		$fields = array(
+			array(
+				'name' => esc_html__( 'Gallery image:', 'lsx-galleries' ),
+				'id'   => $prefix . 'image_02_file',
+				'type' => 'image',
+				'desc' => esc_html__( 'Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)', 'lsx-galleries' ),
+			),
+			array(
+				'id'   => $prefix . 'image_02_title',
+				'name' => esc_html__( 'Gallery title', 'lsx-galleries' ),
+				'type' => 'text',
+			),
+			array(
+				'id'   => $prefix . 'image_02_description',
+				'name' => esc_html__( 'Gallery description', 'lsx-galleries' ),
+				'type' => 'textarea',
+			),
+		);
+
+		$meta_boxes[] = array(
+			'title'  => esc_html__( 'Gallery Image 02', 'lsx-galleries' ),
+			'pages'  => 'gallery',
+			'fields' => $fields,
+		);
+
+		// Image 03
+
+		$fields = array(
+			array(
+				'name' => esc_html__( 'Gallery image:', 'lsx-galleries' ),
+				'id'   => $prefix . 'image_03_file',
+				'type' => 'image',
+				'desc' => esc_html__( 'Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)', 'lsx-galleries' ),
+			),
+			array(
+				'id'   => $prefix . 'image_03_title',
+				'name' => esc_html__( 'Gallery title', 'lsx-galleries' ),
+				'type' => 'text',
+			),
+			array(
+				'id'   => $prefix . 'image_03_description',
+				'name' => esc_html__( 'Gallery description', 'lsx-galleries' ),
+				'type' => 'textarea',
+			),
+		);
+
+		$meta_boxes[] = array(
+			'title'  => esc_html__( 'Gallery Image 03', 'lsx-galleries' ),
 			'pages'  => 'gallery',
 			'fields' => $fields,
 		);
@@ -268,35 +314,21 @@ class LSX_Galleries_Admin {
 	}
 
 	/**
-	 * Add new column - Gallery Source.
+	 * Save the image ID (and not image URL) on image meta.
 	 */
-	public function columns_head( $defaults ) {
-		$defaults['gallery_source'] = esc_html__( 'Gallery Source', 'lsx-galleries' );
-		return $defaults;
-	}
+	public function save_image_gallery_to_cmb( $value, $slug, $entry_id, $field, $form ) {
+		global $wpdb;
 
-	/**
-	 * Show the new column - Gallery Source.
-	 */
-	public function columns_content( $column_name, $post_id ) {
-		if ( 'gallery_source' === $column_name ) {
-			$gallery_id = get_post_meta( $post_id, 'lsx_gallery_gallery', true );
+		if ( in_array( $slug, array( 'lsx_gallery_image_01_file', 'lsx_gallery_image_02_file', 'lsx_gallery_image_03_file' ) ) ) {
+			$media = $wpdb->get_col( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE guid='%s';", $value ) );
 
-			if ( ! empty( $gallery_id ) ) {
-				$gallery_url = wp_get_attachment_url( $gallery_id );
-
-				if ( ! empty( $gallery_url ) ) {
-					echo '<a href="' . esc_url( $gallery_url ) . '" target="_blank" class="button-secondary">' . esc_html__( 'Download', 'lsx-galleries' ) . '</a>';
-				} else {
-					echo '-';
-				}
-			} else {
-				echo '-';
+			if ( ! empty( $media ) && ! empty( $media[0] ) ) {
+				return $media[0];
 			}
 		}
+
+		return $value;
 	}
-
-
 
 }
 

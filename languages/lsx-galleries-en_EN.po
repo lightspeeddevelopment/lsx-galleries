@@ -15,154 +15,166 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: classes/class-lsx-galleries-admin.php:55
+#: classes/class-lsx-galleries-admin.php:52
 msgctxt "post type general name"
 msgid "Galleries"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:56
+#: classes/class-lsx-galleries-admin.php:53
 msgctxt "post type singular name"
 msgid "Gallery"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:57
+#: classes/class-lsx-galleries-admin.php:54
 msgctxt "post type general name"
 msgid "Add New"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:58
+#: classes/class-lsx-galleries-admin.php:55
 msgid "Add New Gallery"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:59
+#: classes/class-lsx-galleries-admin.php:56
 msgid "Edit Gallery"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:60
+#: classes/class-lsx-galleries-admin.php:57
 msgid "New Gallery"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:61
+#: classes/class-lsx-galleries-admin.php:58
 msgid "All Galleries"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:62
+#: classes/class-lsx-galleries-admin.php:59
 msgid "View Gallery"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:63
+#: classes/class-lsx-galleries-admin.php:60
 msgid "Search Galleries"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:64
+#: classes/class-lsx-galleries-admin.php:61
 msgid "No galleries found"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:65
+#: classes/class-lsx-galleries-admin.php:62
 msgid "No galleries found in Trash"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:67
+#: classes/class-lsx-galleries-admin.php:64
 msgctxt "admin menu"
 msgid "Galleries"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:101
+#: classes/class-lsx-galleries-admin.php:98
 msgctxt "taxonomy general name"
 msgid "Gallery Categories"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:102
+#: classes/class-lsx-galleries-admin.php:99
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:103
+#: classes/class-lsx-galleries-admin.php:100
 msgid "Search Categories"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:104
+#: classes/class-lsx-galleries-admin.php:101
 msgid "All Categories"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:105
+#: classes/class-lsx-galleries-admin.php:102
 msgid "Parent Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:106
+#: classes/class-lsx-galleries-admin.php:103
 msgid "Parent Category:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:107
+#: classes/class-lsx-galleries-admin.php:104
 msgid "Edit Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:108
+#: classes/class-lsx-galleries-admin.php:105
 msgid "Update Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:109
+#: classes/class-lsx-galleries-admin.php:106
 msgid "Add New Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:110
+#: classes/class-lsx-galleries-admin.php:107
 msgid "New Category Name"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:111
+#: classes/class-lsx-galleries-admin.php:108
 msgid "Categories"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:136
+#: classes/class-lsx-galleries-admin.php:135
 msgid "Featured:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:154
-msgid "Gallery source:"
-msgstr ""
-
-#: classes/class-lsx-galleries-admin.php:157
-msgid "Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)"
-msgstr ""
-
-#: classes/class-lsx-galleries-admin.php:179
+#: classes/class-lsx-galleries-admin.php:142
 msgid "Gallery Details"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:186
+#: classes/class-lsx-galleries-admin.php:151
 msgid "First Name:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:191
+#: classes/class-lsx-galleries-admin.php:156
 msgid "Last Name:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:196
+#: classes/class-lsx-galleries-admin.php:161
 msgid "Email Address:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:201
+#: classes/class-lsx-galleries-admin.php:166
 msgid "Phone Number:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:206
+#: classes/class-lsx-galleries-admin.php:171
 msgid "Country of Residence"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:213
+#: classes/class-lsx-galleries-admin.php:178
 msgid "Gallery Uploader Details"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:264
+#: classes/class-lsx-galleries-admin.php:187, classes/class-lsx-galleries-admin.php:214, classes/class-lsx-galleries-admin.php:241
+msgid "Gallery image:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:190, classes/class-lsx-galleries-admin.php:217, classes/class-lsx-galleries-admin.php:244
+msgid "Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:194, classes/class-lsx-galleries-admin.php:221, classes/class-lsx-galleries-admin.php:248
+msgid "Gallery title"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:199, classes/class-lsx-galleries-admin.php:226, classes/class-lsx-galleries-admin.php:253
+msgid "Gallery description"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:205
+msgid "Gallery Image 01"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:232
+msgid "Gallery Image 02"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:259
+msgid "Gallery Image 03"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:310
 msgid "Enter gallery title"
-msgstr ""
-
-#: classes/class-lsx-galleries-admin.php:274
-msgid "Gallery Source"
-msgstr ""
-
-#: classes/class-lsx-galleries-admin.php:289
-msgid "Download"
 msgstr ""
 
 #: classes/class-lsx-galleries-frontend.php:156, classes/class-lsx-galleries-widget-list.php:125
