@@ -1,0 +1,358 @@
+# Copyright (C) 2017 lsx-galleries
+# This file is distributed under the same license as the lsx-galleries package.
+msgid ""
+msgstr ""
+"Project-Id-Version: lsx-galleries\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: LightSpeed <webmaster@lsdev.biz>\n"
+"Report-Msgid-Bugs-To: https://github.com/lightspeeddevelopment/lsx-galleries/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: classes/class-lsx-galleries-admin.php:55
+msgctxt "post type general name"
+msgid "Galleries"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:56
+msgctxt "post type singular name"
+msgid "Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:57
+msgctxt "post type general name"
+msgid "Add New"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:58
+msgid "Add New Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:59
+msgid "Edit Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:60
+msgid "New Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:61
+msgid "All Galleries"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:62
+msgid "View Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:63
+msgid "Search Galleries"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:64
+msgid "No galleries found"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:65
+msgid "No galleries found in Trash"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:67
+msgctxt "admin menu"
+msgid "Galleries"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:101
+msgctxt "taxonomy general name"
+msgid "Gallery Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:102
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:103
+msgid "Search Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:104
+msgid "All Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:105
+msgid "Parent Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:106
+msgid "Parent Category:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:107
+msgid "Edit Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:108
+msgid "Update Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:109
+msgid "Add New Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:110
+msgid "New Category Name"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:111
+msgid "Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:136
+msgid "Featured:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:154
+msgid "Gallery source:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:157
+msgid "Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:179
+msgid "Gallery Details"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:186
+msgid "First Name:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:191
+msgid "Last Name:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:196
+msgid "Email Address:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:201
+msgid "Phone Number:"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:206
+msgid "Country of Residence"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:213
+msgid "Gallery Uploader Details"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:264
+msgid "Enter gallery title"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:274
+msgid "Gallery Source"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:289
+msgid "Download"
+msgstr ""
+
+#: classes/class-lsx-galleries-frontend.php:156, classes/class-lsx-galleries-widget-list.php:125
+msgid "Galleries"
+msgstr ""
+
+#: classes/class-lsx-galleries-frontend.php:161
+msgid "Galleries Category"
+msgstr ""
+
+#: classes/class-lsx-galleries-frontend.php:248
+msgid "All"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:14
+msgid "LSX Galleries - Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:113
+msgid "Gallery Categories"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:143, classes/class-lsx-galleries-widget-list.php:159, classes/class-lsx-galleries-widget-most-recent.php:115
+msgid "Title:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:147, classes/class-lsx-galleries-widget-list.php:163, classes/class-lsx-galleries-widget-most-recent.php:119
+msgid "Page Link:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:149, classes/class-lsx-galleries-widget-list.php:165, classes/class-lsx-galleries-widget-most-recent.php:121
+msgid "Link the widget to a page"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:152, classes/class-lsx-galleries-widget-list.php:168, classes/class-lsx-galleries-widget-most-recent.php:124
+msgid "Tagline:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:154, classes/class-lsx-galleries-widget-list.php:170, classes/class-lsx-galleries-widget-most-recent.php:126
+msgid "Tagline to display below the widget title"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:157, classes/class-lsx-galleries-widget-list.php:173, classes/class-lsx-galleries-widget-most-recent.php:129
+msgid "Button \"view all\" text:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:159, classes/class-lsx-galleries-widget-list.php:175, classes/class-lsx-galleries-widget-most-recent.php:131
+msgid "Leave empty to not display the button"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:162, classes/class-lsx-galleries-widget-list.php:178
+msgid "Columns:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:174, classes/class-lsx-galleries-widget-list.php:190
+msgid "Order By:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:178
+msgid "Admin (custom order)"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:179, classes/class-lsx-galleries-widget-list.php:195
+msgid "ID"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:180, classes/class-lsx-galleries-widget-list.php:196
+msgid "Name"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:181
+msgid "Slug"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:182
+msgid "Count"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:192, classes/class-lsx-galleries-widget-list.php:210
+msgid "Order:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:196, classes/class-lsx-galleries-widget-list.php:214
+msgid "Ascending"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:197, classes/class-lsx-galleries-widget-list.php:215
+msgid "Descending"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:207, classes/class-lsx-galleries-widget-list.php:225
+msgid "Maximum amount:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:209, classes/class-lsx-galleries-widget-list.php:227
+msgid "Leave empty to display all"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:212
+msgid "Specify Gallery Categories by ID:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:214, classes/class-lsx-galleries-widget-list.php:232
+msgid "Comma separated list, overrides limit and order settings"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:217, classes/class-lsx-galleries-widget-list.php:254, classes/class-lsx-galleries-widget-most-recent.php:138
+msgid "Display:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:221
+msgid "Description"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:222, classes/class-lsx-galleries-widget-list.php:194, classes/class-lsx-galleries-widget-list.php:245, classes/class-lsx-galleries-widget-list.php:260, classes/class-lsx-galleries-widget-most-recent.php:144
+msgid "None"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:232, classes/class-lsx-galleries-widget-list.php:270, classes/class-lsx-galleries-widget-most-recent.php:154
+msgid "Image size:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-categories.php:237, classes/class-lsx-galleries-widget-list.php:275
+msgid "Carousel"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:14
+msgid "LSX Galleries - List/Grid"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:197
+msgid "Date"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:198
+msgid "Modified Date"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:199
+msgid "Random"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:200
+msgid "Menu (WP dashboard order)"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:230
+msgid "Specify Galleries by ID:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:235
+msgid "Category:"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:258, classes/class-lsx-galleries-widget-most-recent.php:142
+msgid "Excerpt"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:259, classes/class-lsx-galleries-widget-most-recent.php:143
+msgid "Full Content"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-list.php:279, classes/class-lsx-galleries-widget-most-recent.php:159
+msgid "Featured posts"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-most-recent.php:14
+msgid "LSX Galleries - Most Recent"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-most-recent.php:93
+msgid "Most Recent Gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries-widget-most-recent.php:134
+msgid "Specify Gallery by ID:"
+msgstr ""
+
+#: classes/class-lsx-galleries.php:136, classes/class-lsx-galleries.php:280, templates/content-archive-galleries.php:75
+msgid "View gallery"
+msgstr ""
+
+#: classes/class-lsx-galleries.php:207, classes/class-lsx-galleries.php:464
+msgid "Invalid number of columns set. LSX Galleries supports 1 to 4 columns."
+msgstr ""
+
+#: classes/class-lsx-galleries.php:324
+msgid "%1$s ago"
+msgstr ""
+
+#: classes/class-lsx-galleries.php:412
+msgid "View more"
+msgstr ""

@@ -38,10 +38,10 @@ class LSX_Galleries_Admin {
 		add_action( 'init', array( $this, 'create_settings_page' ), 100 );
 		add_filter( 'lsx_framework_settings_tabs', array( $this, 'register_tabs' ), 100, 1 );
 
-		// add_filter( 'type_url_form_media', array( $this, 'change_attachment_field_button' ), 20, 1 );
+		add_filter( 'type_url_form_media', array( $this, 'change_attachment_field_button' ), 20, 1 );
 		add_filter( 'enter_title_here', array( $this, 'change_title_text' ) );
 
-		add_filter( 'cf_custom_fields_pre_save_meta_key_to_post_type', array( $this, 'save_gallery_to_cmb' ), 10, 5 );
+		// add_filter( 'cf_custom_fields_pre_save_meta_key_to_post_type', array( $this, 'save_gallery_to_cmb' ), 10, 5 );
 
 		add_filter( 'manage_gallery_posts_columns', array( $this, 'columns_head' ), 10 );
 		add_action( 'manage_gallery_posts_custom_column', array( $this, 'columns_content' ), 10, 2 );
@@ -138,18 +138,18 @@ class LSX_Galleries_Admin {
 				'type' => 'checkbox',
 			),
 			// * Using post title
-			array(
-			 	'name' => esc_html__( 'Gallery Title:', 'lsx-galleries' ),
-			 	'id'   => $prefix . 'title',
-			 	'type' => 'text',
-			),
+			// array(
+			// 	'name' => esc_html__( 'Gallery Title:', 'lsx-galleries' ),
+			// 	'id'   => $prefix . 'title',
+			// 	'type' => 'text',
+			// ),
 			// * Using post description
-			array(
-			 	'name' => esc_html__( 'Gallery Description', 'lsx-galleries' ),
-			 	'id'   => $prefix . 'description',
-			 	'type' => 'textarea',
-			 	'rows' => 5,
-			),
+			// array(
+			// 	'name' => esc_html__( 'Gallery Description', 'lsx-galleries' ),
+			// 	'id'   => $prefix . 'description',
+			// 	'type' => 'textarea',
+			// 	'rows' => 5,
+			// ),
 			array(
 				'name' => esc_html__( 'Gallery source:', 'lsx-galleries' ),
 				'id'   => $prefix . 'gallery',
@@ -293,10 +293,10 @@ class LSX_Galleries_Admin {
 			} else {
 				echo '-';
 			}
-		} 
+		}
 	}
 
-	
+
 
 }
 
