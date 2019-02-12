@@ -36,5 +36,11 @@
     "gulp-util": "^3.0.8",
     "gulp-wp-pot": "^2.0.4",
     "jshint": "^2.10.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "minimatch": "^3.0.2",
+    "randomatic": "^3.0.0",
+    "sshpk": "^1.13.2"
   }
 }
