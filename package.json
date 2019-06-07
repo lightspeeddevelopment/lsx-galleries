@@ -38,6 +38,8 @@
     "jshint": "^2.10.1"
   },
   "dependencies": {
+    "braces": "^2.3.1",
+    "clean-css": "^4.1.11",
     "lodash": "^4.17.11",
     "minimatch": "^3.0.2",
     "randomatic": "^3.0.0",
