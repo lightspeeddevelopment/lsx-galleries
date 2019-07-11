@@ -40,7 +40,7 @@
   "dependencies": {
     "braces": "^2.3.1",
     "clean-css": "^4.1.11",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "minimatch": "^3.0.2",
     "randomatic": "^3.0.0",
     "shelljs": "^0.8.3",
