@@ -1,4 +1,4 @@
-# Copyright (C) 2017 lsx-galleries
+# Copyright (C) 2019 lsx-galleries
 # This file is distributed under the same license as the lsx-galleries package.
 msgid ""
 msgstr ""
@@ -117,75 +117,103 @@ msgstr ""
 msgid "Featured:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:142
+#: classes/class-lsx-galleries-admin.php:152
 msgid "Gallery Details"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:151
+#: classes/class-lsx-galleries-admin.php:161
 msgid "First Name:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:156
+#: classes/class-lsx-galleries-admin.php:166
 msgid "Last Name:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:161
+#: classes/class-lsx-galleries-admin.php:171
 msgid "Email Address:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:166
+#: classes/class-lsx-galleries-admin.php:176
 msgid "Phone Number:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:171
+#: classes/class-lsx-galleries-admin.php:181
 msgid "Country of Residence"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:178
+#: classes/class-lsx-galleries-admin.php:188
 msgid "Gallery Uploader Details"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:187, classes/class-lsx-galleries-admin.php:214, classes/class-lsx-galleries-admin.php:241
+#: classes/class-lsx-galleries-admin.php:197, classes/class-lsx-galleries-admin.php:224, classes/class-lsx-galleries-admin.php:251, classes/class-lsx-galleries-admin.php:278, classes/class-lsx-galleries-admin.php:305, classes/class-lsx-galleries-admin.php:332, classes/class-lsx-galleries-admin.php:359, classes/class-lsx-galleries-admin.php:386, classes/class-lsx-galleries-admin.php:413, classes/class-lsx-galleries-admin.php:440
 msgid "Gallery image:"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:190, classes/class-lsx-galleries-admin.php:217, classes/class-lsx-galleries-admin.php:244
+#: classes/class-lsx-galleries-admin.php:200, classes/class-lsx-galleries-admin.php:227, classes/class-lsx-galleries-admin.php:254, classes/class-lsx-galleries-admin.php:281, classes/class-lsx-galleries-admin.php:308, classes/class-lsx-galleries-admin.php:335, classes/class-lsx-galleries-admin.php:362, classes/class-lsx-galleries-admin.php:389, classes/class-lsx-galleries-admin.php:416, classes/class-lsx-galleries-admin.php:443
 msgid "Allowed Types: jpg,jpeg,png,gif, Suggested Size: 765x430 pixels (16:9)"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:194, classes/class-lsx-galleries-admin.php:221, classes/class-lsx-galleries-admin.php:248
-msgid "Gallery title"
+#: classes/class-lsx-galleries-admin.php:204, classes/class-lsx-galleries-admin.php:231, classes/class-lsx-galleries-admin.php:258, classes/class-lsx-galleries-admin.php:285, classes/class-lsx-galleries-admin.php:312, classes/class-lsx-galleries-admin.php:339, classes/class-lsx-galleries-admin.php:366, classes/class-lsx-galleries-admin.php:393, classes/class-lsx-galleries-admin.php:420, classes/class-lsx-galleries-admin.php:447
+msgid "Image title"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:199, classes/class-lsx-galleries-admin.php:226, classes/class-lsx-galleries-admin.php:253
-msgid "Gallery description"
+#: classes/class-lsx-galleries-admin.php:209, classes/class-lsx-galleries-admin.php:236, classes/class-lsx-galleries-admin.php:263, classes/class-lsx-galleries-admin.php:290, classes/class-lsx-galleries-admin.php:317, classes/class-lsx-galleries-admin.php:344, classes/class-lsx-galleries-admin.php:371, classes/class-lsx-galleries-admin.php:398, classes/class-lsx-galleries-admin.php:425, classes/class-lsx-galleries-admin.php:452
+msgid "Image description"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:205
-msgid "Gallery Image 01"
+#: classes/class-lsx-galleries-admin.php:215
+msgid "Image 01"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:232
-msgid "Gallery Image 02"
+#: classes/class-lsx-galleries-admin.php:242
+msgid "Image 02"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:259
-msgid "Gallery Image 03"
+#: classes/class-lsx-galleries-admin.php:269
+msgid "Image 03"
 msgstr ""
 
-#: classes/class-lsx-galleries-admin.php:310
+#: classes/class-lsx-galleries-admin.php:296
+msgid "Image 04"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:323
+msgid "Image 05"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:350
+msgid "Image 06"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:377
+msgid "Image 07"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:404
+msgid "Image 08"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:431
+msgid "Image 09"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:458
+msgid "Image 10"
+msgstr ""
+
+#: classes/class-lsx-galleries-admin.php:509
 msgid "Enter gallery title"
 msgstr ""
 
-#: classes/class-lsx-galleries-frontend.php:156, classes/class-lsx-galleries-widget-list.php:125
+#: classes/class-lsx-galleries-frontend.php:191, classes/class-lsx-galleries-widget-list.php:125, includes/settings/display.php:49
 msgid "Galleries"
 msgstr ""
 
-#: classes/class-lsx-galleries-frontend.php:161
+#: classes/class-lsx-galleries-frontend.php:196
 msgid "Galleries Category"
 msgstr ""
 
-#: classes/class-lsx-galleries-frontend.php:248
+#: classes/class-lsx-galleries-frontend.php:283
 msgid "All"
 msgstr ""
 
@@ -361,6 +389,7 @@ msgstr ""
 msgid "Invalid number of columns set. LSX Galleries supports 1 to 4 columns."
 msgstr ""
 
+#. translators: 1: time ago (gallery published date)
 #: classes/class-lsx-galleries.php:324
 msgid "%1$s ago"
 msgstr ""
