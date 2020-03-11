@@ -1,4 +1,7 @@
 ## Change log
 
+### 1.0.1 - In development
+* Fix - Fixed issue `PHP Deprecated: dbx_post_advanced is deprecated since version 3.7.0! Use add_meta_boxes instead`.
+
 ### 1.0.0
 * First Version
